@@ -31,24 +31,24 @@ except ModuleNotFoundError:
 class Config:
     #Telegram API Stuffs
     load_dotenv()  # load enviroment variables from .env file
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", '5774575572')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_ID = int(os.environ.get("API_ID", '12050714'))
+    API_HASH = os.environ.get("API_HASH", "08f1a315f287b51656a25e99966ac0e7")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5665918097:AAGbqoWwHKnvaAX8BXHPgGd77Nksn8TiPEk")     
+    SESSION = os.environ.get("SESSION_STRING", "BQBabjI13Mhm6BSzVcoYKqY4Ac1VRQ6GDaJlhjIPFJa6P6rg8c2ZX0RWgvuK8O_UjR0GkH2qYNDxJZLHzcdrhuGudIqjn2APUnWWqmAYYuT14SZr0cDyPZ9tpg4BGVHi_YOSxml8lZin7Y0IpaRxDG44JtNMnTnEp9EhRcXkyJc31z_qgf57q5t66Wt5L65M4j_pUd0BdWbxSnyQom-vHlhZ3J7JNYMvx8sIn7xPpeMxj2vzIYVqq8IL1jwwDsaKH_nV-mxcbB_K8Vt_PQJPZv8Hgg9JG54er4cBdV4cTrwPw-ovvo3fn_PDxPK3iocjUX8OCI-orajstphO8iYoPVvnAAAAAVgxB9QA")
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", ""))
+    CHAT = int(os.environ.get("CHAT", "-1001740701212"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
 
     #Stream 
-    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
+    STREAM_URL=os.environ.get("STARTUP_STREAM", "")
    
     #Database
-    DATABASE_URI=os.environ.get("DATABASE_URI", None)
-    DATABASE_NAME=os.environ.get("DATABASE_NAME", "VCPlayerBot")
+    DATABASE_URI=os.environ.get("DATABASE_URI", "mongodb+srv://doabandar:doabanda@cluster0.2p8pnki.mongodb.net/?retryWrites=true&w=majority")
+    DATABASE_NAME=os.environ.get("DATABASE_NAME", "")
 
 
     #heroku
