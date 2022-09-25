@@ -48,7 +48,7 @@ class Config:
    
     #Database
     DATABASE_URI=os.environ.get("DATABASE_URI", "mongodb+srv://doabandar:doabanda@cluster0.2p8pnki.mongodb.net/?retryWrites=true&w=majority")
-    DATABASE_NAME=os.environ.get("DATABASE_NAME", "")
+    DATABASE_NAME=os.environ.get("DATABASE_NAME", "doabandar")
 
 
     #heroku
