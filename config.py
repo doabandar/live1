@@ -57,10 +57,10 @@ class Config:
 
 
     #Optional Configuration
-    SHUFFLE=is_enabled(os.environ.get("SHUFFLE", 'True'))
-    ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "False"))
+    SHUFFLE=is_enabled(os.environ.get("SHUFFLE", 'False'))
+    ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "True"))
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", False)
-    EDIT_TITLE = os.environ.get("EDIT_TITLE", True)
+    EDIT_TITLE = os.environ.get("EDIT_TITLE", False)
     #others
     
     RECORDING_DUMP=os.environ.get("RECORDING_DUMP", False)
@@ -114,7 +114,7 @@ class Config:
     MUTED=False
     HAS_SCHEDULE=None
     IS_ACTIVE=None
-    VOLUME=100
+    VOLUME=200
     CURRENT_CALL=None
     BOT_USERNAME=None
     USER_ID=None
