@@ -31,20 +31,20 @@ except ModuleNotFoundError:
 class Config:
     #Telegram API Stuffs
     load_dotenv()  # load enviroment variables from .env file
-    ADMIN = os.environ.get("ADMINS", '5774575572')
+    ADMIN = os.environ.get("ADMINS", '5763847154')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", '12050714'))
-    API_HASH = os.environ.get("API_HASH", "08f1a315f287b51656a25e99966ac0e7")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5665918097:AAGbqoWwHKnvaAX8BXHPgGd77Nksn8TiPEk")     
-    SESSION = os.environ.get("SESSION_STRING", "BQBabjI13Mhm6BSzVcoYKqY4Ac1VRQ6GDaJlhjIPFJa6P6rg8c2ZX0RWgvuK8O_UjR0GkH2qYNDxJZLHzcdrhuGudIqjn2APUnWWqmAYYuT14SZr0cDyPZ9tpg4BGVHi_YOSxml8lZin7Y0IpaRxDG44JtNMnTnEp9EhRcXkyJc31z_qgf57q5t66Wt5L65M4j_pUd0BdWbxSnyQom-vHlhZ3J7JNYMvx8sIn7xPpeMxj2vzIYVqq8IL1jwwDsaKH_nV-mxcbB_K8Vt_PQJPZv8Hgg9JG54er4cBdV4cTrwPw-ovvo3fn_PDxPK3iocjUX8OCI-orajstphO8iYoPVvnAAAAAVgxB9QA")
+    API_ID = int(os.environ.get("API_ID", '17189942'))
+    API_HASH = os.environ.get("API_HASH", "99a0f64c85d8c36e584b41c1089f007a")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5402763390:AAFZP2o40_YExZh1iAEttT2EiNPtxtx1CjQ")     
+    SESSION = os.environ.get("SESSION_STRING", "BQEGTDYAcmJqBrs7yniDuChtiyHQK-disB8eNvLWxEbt6wp_Cp8cls6Oxk8x_gkk-2QpTWz5sMTJqP2CmrgV9aw8E0XWpQjcmMY9MFAumT2oZ9yqXExPPl28AI3U27nOYKdkx1Y25w8FLKWo48sc7hI8zahsdgeVQStkxEIzxeAXEWht8gHr4zNC28aqKD-_pXVS1Cf7oKYzb-Vi_IBDq2GDXWzzXcgPLgGQZR_r_2Ik97fuN6hXUfeQcc8gW3s8yvL81gu7rZd5464o2XHjYi5MyEHlhp97hrQ-1gaOOVAnP_RXR0-eZEB_UQD3cWjcedsMpzdGzwtEO5vOSkNJ3IL8303gHAAAAAFXjVPyAA")
 
     #Stream Chat and Log Group
     CHAT = int(os.environ.get("CHAT", "-1001740701212"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
 
     #Stream 
-    STREAM_URL=os.environ.get("STARTUP_STREAM", "")
+    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://siasky.net/CAD3xt1c9htLei8HPiA_iGMurKP8MVu5MHo8g3B_u6ki_g")
    
     #Database
     DATABASE_URI=os.environ.get("DATABASE_URI", "mongodb+srv://doabandar:doabanda@cluster0.2p8pnki.mongodb.net/?retryWrites=true&w=majority")
