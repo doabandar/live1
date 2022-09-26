@@ -37,11 +37,11 @@ class Config:
     API_ID = int(os.environ.get("API_ID", '17189942'))
     API_HASH = os.environ.get("API_HASH", "99a0f64c85d8c36e584b41c1089f007a")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "5402763390:AAFZP2o40_YExZh1iAEttT2EiNPtxtx1CjQ")     
-    SESSION = os.environ.get("SESSION_STRING", "BQEGTDYAcmJqBrs7yniDuChtiyHQK-disB8eNvLWxEbt6wp_Cp8cls6Oxk8x_gkk-2QpTWz5sMTJqP2CmrgV9aw8E0XWpQjcmMY9MFAumT2oZ9yqXExPPl28AI3U27nOYKdkx1Y25w8FLKWo48sc7hI8zahsdgeVQStkxEIzxeAXEWht8gHr4zNC28aqKD-_pXVS1Cf7oKYzb-Vi_IBDq2GDXWzzXcgPLgGQZR_r_2Ik97fuN6hXUfeQcc8gW3s8yvL81gu7rZd5464o2XHjYi5MyEHlhp97hrQ-1gaOOVAnP_RXR0-eZEB_UQD3cWjcedsMpzdGzwtEO5vOSkNJ3IL8303gHAAAAAFXjVPyAA")
+    SESSION = os.environ.get("SESSION_STRING", "")
 
     #Stream Chat and Log Group
     CHAT = int(os.environ.get("CHAT", "-1001740701212"))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    LOG_GROUP=os.environ.get("LOG_GROUP", "BQCnzjutc-f3jTPCyFwgdC3kU_xNsRw17b73SdUBDO3ux-dKtO5ipsrLHVMCt4iJjMFg72z-ZGTcYa2KxCfFHznFvjDlP_VLHWVDA_EgnXCPAha04oo3DAVzUdGcNxamM4VBQRY3gUVFbARhzX8su0E-yMIKVhGBDWchFtdVXcxPq2M52_JKLLsEmAJwPSb59KnBDSfYLIJ_ipWN6zFp3hC9jX0WpQMcQpm-8bxCKlRbMg4BN6yIiT6jGGgry7Cv7EeejKnfb3AKVU6vDpR5LRc1WUkvsMXA6XPUnGH6oKCFnOqJBwUB_M6ospg9Fp-yAoMY_332QO2hTMIG7ZnLjF7CAAAAAVeNU_IA")
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "https://siasky.net/CAD3xt1c9htLei8HPiA_iGMurKP8MVu5MHo8g3B_u6ki_g")
